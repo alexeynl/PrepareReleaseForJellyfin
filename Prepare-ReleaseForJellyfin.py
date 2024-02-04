@@ -142,4 +142,3 @@ class Release:
 release_path = r'C:\Users\homeadmin\Downloads\Anime\Vinland.Saga.Season2.WEBRip.1080p'
 release = Release(release_path,[".mkv"], [".mka"], [".ass"])
 release._create_sym_links()
-
