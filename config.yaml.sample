@@ -1,0 +1,30 @@
+#  not used at this time, for future implementation
+releases_library_path: /path/to/library
+use_detection: default
+detections:
+  default:
+    method: file_extension
+      media:
+        extension:
+          - mkv
+          - mp4
+      subtitles:
+        extensions:
+          - ass
+          - srt
+      sounds:
+        extensions:
+          - mka
+link_rules:
+  rutracker-01
+    media:
+      path: .
+    subtitles:
+      subdir_patterns:
+        - "ru(s)? subs.*"
+        - "subtitles"
+      ignore_case: true
+    sounds:
+      paths:
+        - "ru(s) sound(s)?"
+      ignore_case: true
